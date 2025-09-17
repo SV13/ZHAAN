@@ -34,7 +34,7 @@ banner = f"""{Fore.BLUE}
 ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌      ▐░░▌
  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀         ▀  ▀         ▀  ▀        ▀▀ 
 
-     {Style.BRIGHT}{Fore.BLUE}Z.H.A.A.N. — Zero-day Heuristic & Analysis for Anomalous Navigation
+     {Style.BRIGHT}{Fore.BLUE}Z.H.A.A.N. — Zero-trust Heuristic Automated Analysis for Navigation
                  Developed by Sharveenn Murthi{Style.RESET_ALL}
 """
 
