@@ -58,3 +58,6 @@ ZHAAN is a Python-based CLI tool. You can install it by cloning the repository a
 To run the ZHAAN system, execute the main script:
 ```bash
 python zhaan.py
+
+
+![Logo](https://github.com/user-attachments/assets/a6fe1c05-1b6c-4a31-b65c-ce22ed060863)
