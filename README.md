@@ -64,4 +64,6 @@ To run the ZHAAN system, execute the main script:
 python zhaan.py
 ```
 
-
+### ZHAAN's SVM-based Model
+<img width="662" height="303" alt="ZHAAN_Model" src="https://github.com/user-attachments/assets/06a8b8f9-ae7d-42cc-b9d0-b1cfcde90b80" />
+The overall accuracy of the SVM-Based model is 89% and this is the percentage of the correctly classified samples in the test set.
