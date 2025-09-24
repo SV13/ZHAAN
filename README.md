@@ -18,6 +18,10 @@ ZHAAN operates as a cohesive framework where all detection methods are integrate
 * The **detection backends** (`rule_engine.py`, `predictor.py`, `malware_scan.py`, and `t5_inference.py`) handle the core logic for their respective detection methods.
 * The **Log Management** system (`log_manager.py`) transparently records all detection events for later review and auditing.
 
+![ZHAAN Architecture](https://github.com/user-attachments/assets/97a7c560-1a4f-46bd-a780-0eb2fe3d98e0)
+
+
+
 ### Secure Coding Techniques
 The project was developed with a focus on secure and reliable coding practices to ensure its stability and integrity.
 * **Input Normalization**: All command inputs are cleaned and standardized (e.g., lowercasing, removing extra spaces) to prevent attackers from bypassing detection using formatting tricks.
