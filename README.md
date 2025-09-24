@@ -36,7 +36,7 @@ ZHAAN is a Python-based CLI tool. You can install it by cloning the repository a
 
 1.  **Clone the Repository**:
     ```bash
-    git clone [https://github.com/Sharveenn/ZHAAN.git](https://github.com/Sharveenn/ZHAAN.git)
+    git clone git clone https://github.com/SV13/ZHAAN.git
     cd ZHAAN
     ```
 
