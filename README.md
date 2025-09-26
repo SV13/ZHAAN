@@ -202,3 +202,62 @@ ZHAAN GPT is strong because the system translates a low-level command into actio
 
 The Log Management system of ZHAAN is created to enable the users to see, manipulate and export the history of detection events. The actions that are recorded in every log entry comprise detection outcomes, user inputs, and model predictions, and more.
 
+<img width="607" height="336" alt="brihn" src="https://github.com/user-attachments/assets/2dd6f43c-ed6d-4e39-b70c-a2bbfc8d8da6" />
+
+<img width="752" height="270" alt="jj3nbgi4no" src="https://github.com/user-attachments/assets/75ac7b93-251f-44bb-994f-b5b125f0f6b3" />
+
+Logs are kept in the ‘logs’ directory in plain text so that they are easily accessed and the logs are transparent as shown above.
+
+<img width="427" height="376" alt="yhnnj5n" src="https://github.com/user-attachments/assets/a60454d9-6905-44be-8d35-59bf88291fae" />
+
+The above figure shows the ZHAAN’s log management menu which has the options:
+
+[1] View Current Log
+
+[2] View All Logs
+
+[3] Export Log File
+
+[4] Set Max Log File Size
+
+[5] Return to Main Menu
+
+Under the hood, log rotation is done automatically by the log manager and log files are not allowed to grow beyond a size defined by the user. This saves performance and does not use excessive disk usage.
+
+<img width="814" height="112" alt="jgh5h6" src="https://github.com/user-attachments/assets/55d87e7a-17a5-46e2-9219-1b1c572be0a1" />
+
+<img width="752" height="120" alt="nbg3rn4ing" src="https://github.com/user-attachments/assets/98dadd20-d201-4b94-8138-407b6bc0825d" />
+
+### [1] View Current Log
+
+<img width="814" height="112" alt="t4bvir5n5" src="https://github.com/user-attachments/assets/c4a54ca5-a5b8-490b-9381-447aa8caf42c" />
+
+Above shows the ‘View Current Log’ option output. ZHAAN will show the contents of the log file that is currently active (zhaan_log.txt). This file is the real time chronological log of every single detection made by ZHAAN in the different modules. Each line in the active log contains:
+
+•	A timestamp marking the date and time of the event
+
+•	The source module that generated the event (Live Monitor, Rule-Based, ML Detection, Malware Identify, ZHAAN GPT)
+
+•	The command or process being analyzed
+
+•	The detection results from each source module
+
+This log offers users an overview of activity across modules, a method to audit differences between rule and ML detection, unambiguous traceability with time stamps to support forensic or reporting purposes, and human readable summary without requiring examination of raw files.
+
+### [2] View All Logs
+
+<img width="415" height="576" alt="4nijrvnti4" src="https://github.com/user-attachments/assets/8d7d6228-d9ec-4346-9482-b0f4bb5dec90" />
+
+Above shows the ‘View All Logs’ option output. ZHAAN lists the logs/ directory and shows all accessible log files, the current log, ‘zhaan_log.txt’ and rotated logs. In every listed log file, there is the file name which clearly shows the rotation of log files. The size of the file in kilobytes (KB), which assists the user to know the amount of data contained in each file. This choice is helpful since it has a well-organized history so that users can easily notice the number of log rotations that have taken place. Storage awareness is then useful in gauging the amount of space logs take up as time goes by. In addition, the users later have the option of exporting logs by name in the case of audit or forensics.
+
+### [3] Export Log File
+
+<img width="752" height="567" alt="tbirn" src="https://github.com/user-attachments/assets/f084ed8a-9819-4b31-b9f1-06b5046cad0a" />
+
+Above shows the ‘Export Log File’ option output. The user can export a particular log file to a directory of any choice. When this option is chosen, ZHAAN will list the available log files, numbered, in ‘logs’ directory and the current log, zhaan_log.txt along with the rotated logs. By typing the number, the user chooses the log file wants to export. After choosing, the user is asked to supply an export path, a valid destination to which the file will be copied. When confirmed, ZHAAN will duplicate the chosen log to a given destination by using the file handling operations in Python and inform the user that the export has been completed successfully. This aspect can prove to be particularly beneficial in case of log back up, transmission to a secure repository or transmission to third-party analysts to perform further analysis. It helps in making ZHAAN more useful in real life situations as it facilitates documentation, audits, and forensic investigations and it is very convenient to maintain or carry evidence of suspicious activities or detections.
+
+### [4] Set Max Log File Size
+
+<img width="502" height="257" alt="mnbt5ijno" src="https://github.com/user-attachments/assets/0c176c6c-1a57-4f88-b3d6-fb102d90ea72" />
+
+Above shows the ‘Set Max Log File Size’ option output. The size threshold of individual log files is placed under the control of the users in this option. After it is chosen, ZHAAN will ask the user to enter a new maximum size of files in kilobytes (KB). In this scenario, the user enters 520, ZHAAN will modify its setting that subsequent log files will rotate when they have reached 520 KB. When confirmed, ZHAAN gives a response that the new size limit has been applied successfully. This aspect is particularly helpful in places where the efficiency of storage and management of the size of logs are crucial since it eliminates the possibility of uncontrolled growth of log files whilst constantly monitoring the activity on the system. Allowing the user to adjust this threshold, ZHAAN can be configured to the lightweight deployment, or the high-volume detection configuration
